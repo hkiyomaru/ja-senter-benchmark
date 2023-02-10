@@ -1,17 +1,10 @@
 import time
-from dataclasses import dataclass
 
 from senters import Senter
 from utils import Example
 
 
-@dataclass
-class Result:
-    f1: float
-    elapsed_time: float
-
-
-def get_benchmark(senter: Senter, examples: list[Example]) -> Result:
+def get_benchmark(senter: Senter, examples: list[Example]) -> None:
     start = time.time()
     predictions = [senter(example.input) for example in examples]
     end = time.time()
@@ -29,11 +22,4 @@ def get_benchmark(senter: Senter, examples: list[Example]) -> Result:
     precicion = tp / (tp + fp)
     recall = tp / (tp + fn)
     f1 = 100 * 2 * precicion * recall / (precicion + recall)
-
-    return Result(f1, elapsed_time)
-
-
-def summarize_results(results: dict[str, Result]) -> None:
-    print("Senter\tF1\tElapsed Time")
-    for name, result in results.items():
-        print(f"{name}\t{result.f1:.1f}\t{result.elapsed_time:.2f}")
+    print(f"{senter.name}\t{f1:5.1f} (Elapsed time: {elapsed_time:.2f})")
