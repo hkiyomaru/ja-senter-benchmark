@@ -7,7 +7,7 @@
 ## Installation
 
 ```shell
-pipenv sync
+pipenv install
 ```
 
 ## Benchmarking
