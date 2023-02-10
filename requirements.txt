@@ -4,9 +4,43 @@
 #
 #    pip-compile
 #
+bunkai==1.5.7
+    # via -r requirements.in
+dataclasses-json==0.5.7
+    # via bunkai
 emoji==2.2.0
-    # via sengiri
+    # via
+    #   bunkai
+    #   sengiri
+emojis==0.7.0
+    # via bunkai
+janome==0.4.2
+    # via bunkai
+marshmallow==3.19.0
+    # via
+    #   dataclasses-json
+    #   marshmallow-enum
+marshmallow-enum==1.5.1
+    # via dataclasses-json
 mecab-python3==1.0.6
     # via sengiri
+more-itertools==9.0.0
+    # via bunkai
+mypy-extensions==1.0.0
+    # via typing-inspect
+packaging==23.0
+    # via marshmallow
+regex==2022.10.31
+    # via bunkai
 sengiri==0.2.1
     # via -r requirements.in
+spans==1.1.1
+    # via bunkai
+toml==0.10.2
+    # via bunkai
+tqdm==4.64.1
+    # via bunkai
+typing-extensions==4.4.0
+    # via typing-inspect
+typing-inspect==0.8.0
+    # via dataclasses-json
