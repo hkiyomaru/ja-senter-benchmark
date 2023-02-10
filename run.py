@@ -28,8 +28,8 @@ def main() -> None:
         # ginza
         results[str(data_file)]["ginza"] = get_benchmark(Ginza(), examples)
 
-    for name, result in results.items():
-        print(f"Benchmark on {name}")
+    for data_name, result in results.items():
+        print(f"Benchmark on {data_name}")
         summarize_results(result)
         print("---")
 
