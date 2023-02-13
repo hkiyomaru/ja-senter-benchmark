@@ -38,7 +38,6 @@ def benchmark(senter: Senter, examples: list[Example]) -> None:
     for example in examples:
         prediction = post_process(senter(example.input))
         predictions.append(prediction)
-        print(prediction)
     end = time.time()
 
     # Get elapsed time
