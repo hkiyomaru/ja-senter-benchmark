@@ -36,6 +36,6 @@ pipenv run run.py
 
 | Tool                                                 | cc100 | emoji | kaomoji | title_w_period    | new_line |
 |------------------------------------------------------|-------|-------|---------|-------------------|----------|
-| [sengiri](https://github.com/ikegami-yukino/sengiri) | 66.7  | 0.0   | 0.0     | 48.0              | 29.6     |
-| [bunkai](https://github.com/megagonlabs/bunkai)      | 83.3  | 91.4  | 47.1    | 0.0               | 29.6     |
-| [ginza](https://github.com/megagonlabs/ginza)        | 73.4  | 62.5  | 64.9    | 76.2              | 63.6     |
+| [sengiri](https://github.com/ikegami-yukino/sengiri) | 68.1  | 0.0   | 0.0     | 48.0              | 44.4     |
+| [bunkai](https://github.com/megagonlabs/bunkai)      | 84.8  | 91.4  | 47.1    | 0.0               | 44.4     |
+| [ginza](https://github.com/megagonlabs/ginza)        | 74.8  | 62.5  | 64.9    | 76.2              | 81.8     |
