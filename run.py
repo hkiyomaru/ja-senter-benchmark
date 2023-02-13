@@ -13,10 +13,17 @@ here = Path(__file__).parent
 data_dir = here.joinpath("data")
 
 
+def post_process(sents: list[str]) -> list[str]:
+    return [sent.strip() for sent in sents if sent.strip()]
+
+
 @dataclass
 class Example:
     input: str
     output: list[str]
+
+    def __post_init__(self) -> None:
+        self.output = post_process(self.output)
 
 
 def benchmark(senter: Senter, examples: list[Example]) -> None:
@@ -27,7 +34,11 @@ def benchmark(senter: Senter, examples: list[Example]) -> None:
         examples: Examples used for benchmarking.
     """
     start = time.time()
-    predictions = [senter(example.input) for example in examples]
+    predictions = []
+    for example in examples:
+        prediction = post_process(senter(example.input))
+        predictions.append(prediction)
+        print(prediction)
     end = time.time()
 
     # Get elapsed time
@@ -42,7 +53,10 @@ def benchmark(senter: Senter, examples: list[Example]) -> None:
         fn += sum(o not in prediction for o in output)
     pre = tp / (tp + fp)
     rec = tp / (tp + fn)
-    f1 = 100 * 2 * pre * rec / (pre + rec)
+    if pre + rec > 0:
+        f1 = 100 * 2 * pre * rec / (pre + rec)
+    else:
+        f1 = 0.0
     print(f"{senter.name}\t{f1:5.1f} (Elapsed time: {elapsed_time:.2f})")
 
 
