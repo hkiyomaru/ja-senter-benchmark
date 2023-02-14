@@ -4,7 +4,7 @@ import time
 from dataclasses import dataclass
 from pathlib import Path
 
-from senters import Bunkai, Ginza, Sengiri, Senter
+from senters import Bunkai, Ginza, Hasami, Sengiri, Senter
 
 logger = logging.getLogger(__name__)
 
@@ -65,6 +65,7 @@ def main() -> None:
         with data_file.open() as f:
             examples = [Example(**json.loads(line)) for line in f]
         benchmark(Sengiri(), examples)
+        benchmark(Hasami(), examples)
         benchmark(Bunkai(), examples)
         benchmark(Ginza(), examples)
         print("---")

@@ -8,6 +8,7 @@ ginza = "*"
 ja-ginza = "*"
 bunkai = "*"
 sengiri = {ref = "54f120b3358f0012f5c2a58b55323527f18aff80", git = "https://github.com/ikegami-yukino/sengiri"}
+hasami = "*"
 
 [dev-packages]
 

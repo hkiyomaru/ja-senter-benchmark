@@ -1,4 +1,5 @@
 import bunkai
+import hasami
 import sengiri
 import spacy
 
@@ -21,6 +22,17 @@ class Sengiri(Senter):
     @property
     def name(self) -> str:
         return "sengiri"
+
+
+class Hasami(Senter):
+    """https://github.com/ikegami-yukino/sengiri."""
+
+    def __call__(self, text: str) -> list[str]:
+        return hasami.segment_sentences(text)
+
+    @property
+    def name(self) -> str:
+        return "hasami"
 
 
 class Bunkai(Senter):
