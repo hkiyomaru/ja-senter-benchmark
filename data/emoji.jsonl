@@ -1,9 +1,10 @@
 {"input": "もちろん大丈夫です\uD83D\uDC4Dよろしくお願いします。", "output": ["もちろん大丈夫です\uD83D\uDC4D", "よろしくお願いします。"]}
 {"input": "もちろん大丈夫です\uD83D\uDE01よろしくお願いします。", "output": ["もちろん大丈夫です\uD83D\uDE01", "よろしくお願いします。"]}
 {"input": "もちろん大丈夫です\uD83D\uDE06よろしくお願いします。", "output": ["もちろん大丈夫です\uD83D\uDE06", "よろしくお願いします。"]}
-{"input": "うーん\uD83D\uDE05それは厳しいです。", "output": ["うーん\uD83D\uDE05", "それは厳しいです。"]}
-{"input": "うーん\uD83D\uDE13それは厳しいです。", "output": ["うーん\uD83D\uDE13", "それは厳しいです。"]}
-{"input": "うーん\uD83D\uDE25それは厳しいです。", "output": ["うーん\uD83D\uDE25", "それは厳しいです。"]}
-{"input": "もう\uD83D\uDCA2さいあく\uD83D\uDCA2", "output": ["もう\uD83D\uDCA2", "さいあく\uD83D\uDCA2"]}
-{"input": "もう\uD83D\uDE2Bさいあく\uD83D\uDE2B", "output": ["もう\uD83D\uDE2B", "さいあく\uD83D\uDE2B"]}
-{"input": "もう\uD83D\uDE29さいあく\uD83D\uDE29", "output": ["もう\uD83D\uDE29", "さいあく\uD83D\uDE29"]}
+{"input": "明日締切ですよね\uD83D\uDE05それは厳しいです。", "output": ["明日締切ですよね\uD83D\uDE05", "それは厳しいです。"]}
+{"input": "明日締切ですよね\uD83D\uDE13それは厳しいです。", "output": ["明日締切ですよね\uD83D\uDE13", "それは厳しいです。"]}
+{"input": "明日締切ですよね\uD83D\uDE25それは厳しいです。", "output": ["明日締切ですよね\uD83D\uDE25", "それは厳しいです。"]}
+{"input": "おわった\uD83D\uDCA2さいあく\uD83D\uDCA2", "output": ["おわった\uD83D\uDCA2", "さいあく\uD83D\uDCA2"]}
+{"input": "おわった\uD83D\uDE2Bさいあく\uD83D\uDE2B", "output": ["おわった\uD83D\uDE2B", "さいあく\uD83D\uDE2B"]}
+{"input": "おわった\uD83D\uDE29さいあく\uD83D\uDE29", "output": ["おわった\uD83D\uDE29", "さいあく\uD83D\uDE29"]}
+{"input": "おわった\uD83D\uDCA2\uD83D\uDCA2\uD83D\uDCA2さいあく\uD83D\uDCA2\uD83D\uDCA2\uD83D\uDCA2", "output": ["おわった\uD83D\uDCA2\uD83D\uDCA2\uD83D\uDCA2", "さいあく\uD83D\uDCA2\uD83D\uDCA2\uD83D\uDCA2"]}
