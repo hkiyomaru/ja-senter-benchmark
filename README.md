@@ -19,7 +19,8 @@ pipenv run run.py
 ## Benchmark
 
 - Data:
-  - [cc100](./data/cc100.jsonl): 15 documents sampled from CC-100.
+  - [wikipedia](./data/wikipedia.jsonl): 15 documents sampled from Japanese Wikipedia.
+  - [cc100](./data/cc100.jsonl): 15 documents sampled from CC-100 (web text).
   - [emoji](./data/emoji.jsonl)
     - Example input: `"もちろん大丈夫です👍よろしくお願いします。"`
     - Expected output: `["もちろん大丈夫です👍", "よろしくお願いします。"]`
@@ -34,11 +35,11 @@ pipenv run run.py
     - Expected output: `["時間は現在調整中ですので決まり次第\nご連絡差し上げます。"]`
 - Evaluation metric: F1
 
-| Tool                                                 | cc100 | emoji | kaomoji | title_w_period | new_line |
-|------------------------------------------------------|-------|-------|---------|----------------|----------|
-| [pysbd](https://github.com/nipunsadvilkar/pySBD)     | 85.5  | 0.0   | 0.0     | 0.0            | 44.4     |
-| [rhoknp](https://github.com/ku-nlp/rhoknp)           | 88.4  | 0.0   | 0.0     | 0.0            | 44.4     |
-| [sengiri](https://github.com/ikegami-yukino/sengiri) | 68.1  | 12.9  | 0.0     | 48.0           | 44.4     |
-| [hasami](https://github.com/mkartawijaya/hasami)     | 86.2  | 0.0   | 0.0     | 63.6           | 44.4     |
-| [bunkai](https://github.com/megagonlabs/bunkai)      | 83.7  | 100.0 | 66.7    | 0.0            | 81.8     |
-| [ginza](https://github.com/megagonlabs/ginza)        | 74.8  | 54.1  | 64.9    | 76.2           | 81.8     |
+| Tool                                                 | wikipedia | cc100   | emoji | kaomoji | title_w_period | new_line |
+|------------------------------------------------------|-----------|---------|-------|---------|----------------|----------|
+| [pysbd](https://github.com/nipunsadvilkar/pySBD)     | 100.0     | 85.5    | 0.0   | 0.0     | 0.0            | 44.4     |
+| [rhoknp](https://github.com/ku-nlp/rhoknp)           | 100.0     | 88.4    | 0.0   | 0.0     | 0.0            | 44.4     |
+| [hasami](https://github.com/mkartawijaya/hasami)     | 94.8      | 86.2    | 0.0   | 0.0     | 63.6           | 44.4     |
+| [sengiri](https://github.com/ikegami-yukino/sengiri) | 55.7      | 68.1    | 12.9  | 0.0     | 48.0           | 44.4     |
+| [bunkai](https://github.com/megagonlabs/bunkai)      | 93.7      | 83.7    | 100.0 | 66.7    | 0.0            | 81.8     |
+| [ginza](https://github.com/megagonlabs/ginza)        | 86.5      | 74.8    | 54.1  | 64.9    | 76.2           | 81.8     |
