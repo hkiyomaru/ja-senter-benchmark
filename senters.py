@@ -3,6 +3,7 @@ import pathlib
 
 import bunkai
 import hasami
+import pysbd
 import sengiri
 import spacy
 from bunkai.cli import setup
@@ -59,6 +60,20 @@ class Bunkai(Senter):
     @property
     def name(self) -> str:
         return "bunkai"
+
+
+class Pysbd(Senter):
+    """https://github.com/ikegami-yukino/sengiri."""
+
+    def __init__(self) -> None:
+        self.seg = pysbd.Segmenter(language="ja")
+
+    def __call__(self, text: str) -> list[str]:
+        return self.seg.segment(text)
+
+    @property
+    def name(self) -> str:
+        return "pysbd"
 
 
 class Ginza(Senter):

@@ -4,7 +4,7 @@ import time
 from dataclasses import dataclass
 from pathlib import Path
 
-from senters import Bunkai, Ginza, Hasami, Sengiri, Senter
+from senters import Bunkai, Ginza, Hasami, Pysbd, Sengiri, Senter
 
 logger = logging.getLogger(__name__)
 
@@ -60,7 +60,7 @@ def benchmark(senter: Senter, examples: list[Example]) -> None:
 
 
 def main() -> None:
-    senter_list = [Sengiri(), Hasami(), Bunkai(), Ginza()]
+    senter_list = [Sengiri(), Hasami(), Pysbd(), Bunkai(), Ginza()]
     for data_file in data_dir.glob("*.jsonl"):
         print("#", data_file.absolute())
         with data_file.open() as f:
