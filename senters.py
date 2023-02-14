@@ -1,7 +1,13 @@
+import logging
+import pathlib
+
 import bunkai
 import hasami
 import sengiri
 import spacy
+from bunkai.cli import setup
+
+here = pathlib.Path(__file__).parent
 
 
 class Senter:
@@ -39,7 +45,13 @@ class Bunkai(Senter):
     """https://github.com/megagonlabs/bunkai."""
 
     def __init__(self) -> None:
-        self.bunkai = bunkai.Bunkai()
+        model_path = here.joinpath("bunkai_model")
+        if not model_path.exists():
+            setup(here / "bunkai_model", None)
+        self.bunkai = bunkai.Bunkai(path_model=model_path)
+
+        # Disable verbose logging
+        logging.getLogger("bunkai").setLevel(logging.ERROR)
 
     def __call__(self, text: str) -> list[str]:
         return list(self.bunkai(text))

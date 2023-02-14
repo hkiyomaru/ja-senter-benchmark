@@ -112,3 +112,6 @@ dmypy.json
 
 # data
 data/
+
+# model
+bunkai_model/
