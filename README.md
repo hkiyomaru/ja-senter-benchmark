@@ -13,7 +13,7 @@ pipenv install
 ## Run
 
 ```shell
-pipenv run run.py
+pipenv run python run.py
 ```
 
 ## Benchmark
