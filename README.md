@@ -1,4 +1,4 @@
-# Benchmarking Japanese Sentence Segmentation Tools
+# Comparison of Japanese Sentence Segmentation Tools
 
 ## Requirements
 
@@ -10,13 +10,13 @@
 pipenv install
 ```
 
-## Benchmarking
+## Run
 
 ```shell
 pipenv run run.py
 ```
 
-## Benchmarking
+## Benchmark
 
 - Data:
   - [cc100](./data/cc100.jsonl): 15 documents sampled from CC-100.
