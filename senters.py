@@ -4,6 +4,7 @@ import pathlib
 import bunkai
 import hasami
 import pysbd
+import rhoknp
 import sengiri
 import spacy
 from bunkai.cli import setup
@@ -18,6 +19,20 @@ class Senter:
     @property
     def name(self) -> str:
         raise NotImplementedError
+
+
+class Rhoknp(Senter):
+    """https://github.com/ku-nlp/rhoknp."""
+
+    def __init__(self) -> None:
+        self.senter = rhoknp.RegexSenter()
+
+    def __call__(self, text: str) -> list[str]:
+        return [s.text for s in self.senter(text).sentences]
+
+    @property
+    def name(self) -> str:
+        return "rhoknp"
 
 
 class Sengiri(Senter):

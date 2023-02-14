@@ -37,6 +37,7 @@ pipenv run run.py
 | Tool                                                 | cc100 | emoji | kaomoji | title_w_period | new_line |
 |------------------------------------------------------|-------|-------|---------|----------------|----------|
 | [pysbd](https://github.com/nipunsadvilkar/pySBD)     | 85.5  | 0.0   | 0.0     | 0.0            | 44.4     |
+| [rhoknp](https://github.com/ku-nlp/rhoknp)           | 88.4  | 0.0   | 0.0     | 0.0            | 44.4     |
 | [sengiri](https://github.com/ikegami-yukino/sengiri) | 68.1  | 12.9  | 0.0     | 48.0           | 44.4     |
 | [hasami](https://github.com/mkartawijaya/hasami)     | 86.2  | 0.0   | 0.0     | 63.6           | 44.4     |
 | [bunkai](https://github.com/megagonlabs/bunkai)      | 83.7  | 100.0 | 66.7    | 0.0            | 81.8     |

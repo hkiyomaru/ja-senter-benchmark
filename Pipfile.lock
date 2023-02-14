@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5da4a41c9715b4355c1b0c505f9d808650d202e6bbf0648e4428b04ea2f06ace"
+            "sha256": "90f96cc05d76582f3521c6ed9760bea277d1d2c66fd902644932a0d6bc6827c1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -719,6 +719,14 @@
             ],
             "markers": "python_version >= '3.7' and python_version < '4'",
             "version": "==2.28.2"
+        },
+        "rhoknp": {
+            "hashes": [
+                "sha256:4c0a319c76455f7996c5bfaa772372ea8117244ac63a93fe9a427442433ac6a3",
+                "sha256:729d77ea52862fe8fe5fabd27c12cea4e29f241376df0c4848ab455c7f0573db"
+            ],
+            "index": "pypi",
+            "version": "==1.2.0"
         },
         "sengiri": {
             "git": "https://github.com/ikegami-yukino/sengiri",
