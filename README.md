@@ -33,7 +33,7 @@ pipenv run run.py
   - [new_line](./data/new_line.jsonl)
     - Example input: `"時間は現在調整中ですので決まり次第\nご連絡差し上げます。"`
     - Expected output: `["時間は現在調整中ですので決まり次第\nご連絡差し上げます。"]`
-- Evaluation metric: F1
+- Evaluation metric: F1 (micro average)
 
 | Tool                                                 | wikipedia | cc100   | emoji | kaomoji | named_entity | new_line |
 |------------------------------------------------------|-----------|---------|-------|---------|--------------|----------|
