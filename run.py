@@ -60,14 +60,13 @@ def benchmark(senter: Senter, examples: list[Example]) -> None:
 
 
 def main() -> None:
+    senter_list = [Sengiri(), Hasami(), Bunkai(), Ginza()]
     for data_file in data_dir.glob("*.jsonl"):
         print("#", data_file.absolute())
         with data_file.open() as f:
             examples = [Example(**json.loads(line)) for line in f]
-        benchmark(Sengiri(), examples)
-        benchmark(Hasami(), examples)
-        benchmark(Bunkai(), examples)
-        benchmark(Ginza(), examples)
+        for senter in senter_list:
+            benchmark(senter, examples)
         print("---")
 
 
