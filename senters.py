@@ -95,7 +95,7 @@ class Ginza(Senter):
     """https://github.com/megagonlabs/ginza."""
 
     def __init__(self) -> None:
-        self.nlp = spacy.load("ja_ginza")  # standard model
+        self.nlp = spacy.load("ja_ginza_electra")
 
     def __call__(self, text: str) -> list[str]:
         return [sent.text for sent in self.nlp(text).sents]
