@@ -35,11 +35,11 @@ pipenv run python run.py
     - Expected output: `["時間は現在調整中ですので決まり次第\nご連絡差し上げます。"]`
 - Evaluation metric: F1 (micro average)
 
-| Tool                                                 | wikipedia | cc100   | emoji | kaomoji | named_entity | new_line |
-|------------------------------------------------------|-----------|---------|-------|---------|--------------|----------|
-| [pysbd](https://github.com/nipunsadvilkar/pySBD)     | 100.0     | 85.5    | 0.0   | 0.0     | 0.0          | 44.4     |
-| [rhoknp](https://github.com/ku-nlp/rhoknp)           | 100.0     | 88.4    | 0.0   | 0.0     | 0.0          | 44.4     |
-| [hasami](https://github.com/mkartawijaya/hasami)     | 94.8      | 86.2    | 0.0   | 0.0     | 63.6         | 44.4     |
-| [sengiri](https://github.com/ikegami-yukino/sengiri) | 55.7      | 68.1    | 12.9  | 0.0     | 48.0         | 44.4     |
-| [bunkai](https://github.com/megagonlabs/bunkai)      | 93.7      | 83.7    | 100.0 | 66.7    | 0.0          | 81.8     |
-| [ginza](https://github.com/megagonlabs/ginza)        | 86.5      | 74.8    | 54.1  | 64.9    | 76.2         | 81.8     |
+| Tool                                                 | Method                   | wikipedia | cc100   | emoji | kaomoji | named_entity | new_line |
+|------------------------------------------------------|--------------------------|-----------|---------|-------|---------|--------------|----------|
+| [pysbd](https://github.com/nipunsadvilkar/pySBD)     | Rule-based               | 100.0     | 85.5    | 0.0   | 0.0     | 0.0          | 44.4     |
+| [rhoknp](https://github.com/ku-nlp/rhoknp)           | Rule-based               | 100.0     | 88.4    | 0.0   | 0.0     | 0.0          | 44.4     |
+| [hasami](https://github.com/mkartawijaya/hasami)     | Rule-based               | 94.8      | 86.2    | 0.0   | 0.0     | 63.6         | 44.4     |
+| [sengiri](https://github.com/ikegami-yukino/sengiri) | Rule-based               | 55.7      | 68.1    | 12.9  | 0.0     | 48.0         | 44.4     |
+| [bunkai](https://github.com/megagonlabs/bunkai)      | Rule-based + Model-based | 93.7      | 83.7    | 100.0 | 66.7    | 0.0          | 81.8     |
+| [ginza](https://github.com/megagonlabs/ginza)        | Model-based              | 86.5      | 74.8    | 54.1  | 64.9    | 76.2         | 81.8     |
