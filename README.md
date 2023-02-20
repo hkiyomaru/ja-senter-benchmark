@@ -39,7 +39,7 @@ pipenv run python run.py
 |------------------------------------------------------------------|--------------------------|-----------|---------|-------|---------|--------------|----------|
 | [pysbd](https://github.com/nipunsadvilkar/pySBD)                 | Rule-based               | 100.0     | 85.5    | 0.0   | 0.0     | 0.0          | 44.4     |
 | [rhoknp](https://github.com/ku-nlp/rhoknp)                       | Rule-based               | 100.0     | 88.4    | 0.0   | 0.0     | 0.0          | 44.4     |
-| [hasami](https://github.com/mkartawijaya/hasami)                 | Rule-based               | 94.8      | 86.2    | 0.0   | 0.0     | 63.6         | 44.4     |
-| [sengiri](https://github.com/ikegami-yukino/sengiri)             | Rule-based               | 55.7      | 68.1    | 12.9  | 0.0     | 48.0         | 44.4     |
-| [bunkai](https://github.com/megagonlabs/bunkai)                  | Rule-based + Model-based | 93.7      | 83.7    | 100.0 | 66.7    | 0.0          | 81.8     |
-| [ginza](https://github.com/megagonlabs/ginza) (ja_ginza_electra) | Model-based              | 95.7      | 85.7    | 66.7  | 84.2    | 66.7         | 60.0     |
+| [hasami](https://github.com/mkartawijaya/hasami)                 | Rule-based               | 94.8      | 86.2    | 0.0   | 0.0     | 72.7         | 44.4     |
+| [sengiri](https://github.com/ikegami-yukino/sengiri)             | Rule-based               | 55.7      | 68.1    | 12.9  | 0.0     | 56.0         | 44.4     |
+| [bunkai](https://github.com/megagonlabs/bunkai)                  | Rule-based + Model-based | 93.7      | 83.7    | 100.0 | 66.7    | 0.0          | 100.0    |
+| [ginza](https://github.com/megagonlabs/ginza) (ja_ginza_electra) | Model-based              | 95.7      | 85.7    | 66.7  | 84.2    | 75.0         | 70.0     |
