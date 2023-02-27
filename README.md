@@ -18,7 +18,7 @@ pipenv run python run.py
 
 ## Benchmark
 
-- Data:
+- Data[^1]:
   - [wikipedia](./data/wikipedia.jsonl): 15 documents sampled from Japanese Wikipedia.
   - [cc100](./data/cc100.jsonl): 15 documents sampled from CC-100 (web text).
   - [emoji](./data/emoji.jsonl)
@@ -44,3 +44,5 @@ pipenv run python run.py
 | [sengiri](https://github.com/ikegami-yukino/sengiri)             | Rule-based               | 55.7      | 68.1  | 12.9  | 0.0     | 56.0         | 44.4     |
 | [bunkai](https://github.com/megagonlabs/bunkai)                  | Rule-based + Model-based | 93.7      | 83.7  | 100.0 | 66.7    | 0.0          | 100.0    |
 | [ginza](https://github.com/megagonlabs/ginza) (ja_ginza_electra) | Model-based              | 95.7      | 85.7  | 66.7  | 84.2    | 75.0         | 70.0     |
+
+[^1]: Annotation has been done by the repository owner.
