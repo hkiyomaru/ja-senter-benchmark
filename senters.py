@@ -3,6 +3,7 @@ import pathlib
 
 import bunkai
 import hasami
+import kuzukiri
 import pysbd
 import rhoknp
 import sengiri
@@ -89,6 +90,20 @@ class Pysbd(Senter):
     @property
     def name(self) -> str:
         return "pysbd"
+
+
+class Kuzukiri(Senter):
+    """https://github.com/alinear-corp/kuzukiri."""
+
+    def __init__(self) -> None:
+        self.segmenter = kuzukiri.Segmenter()
+
+    def __call__(self, text: str) -> list[str]:
+        return self.segmenter.split(text)
+
+    @property
+    def name(self) -> str:
+        return "kuzukiri"
 
 
 class Ginza(Senter):
